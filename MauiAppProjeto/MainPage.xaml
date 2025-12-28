@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppProjeto.MainPage"
+             Title="Média da Turma">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label 
+                Text="Cálculo da Média da Turma 🎓"
+                FontSize="24"
+                HorizontalOptions="Center"
+                TextColor="DodgerBlue" />
+
+            <Entry 
+                x:Name="txtQtdAlunos"
+                Placeholder="Digite a quantidade de alunos"
+                Keyboard="Numeric" />
+
+            <Entry 
+                x:Name="txtNotas"
+                Placeholder="Digite as notas separadas por vírgula (ex: 7.5,8.0,9.0)" />
+
+            <Button 
+                Text="Calcular Média"
+                Clicked="CalcularMedia_Clicked"
+                BackgroundColor="DodgerBlue"
+                TextColor="White" />
+
+            <Label 
+                x:Name="lblResultado"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                IsVisible="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
